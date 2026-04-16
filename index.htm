@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Nova Lane — Portfolio</title>
+<meta name="description" content="Nova Lane portfolio. Cinematic storyteller, filmmaker, photographer." />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav-wrap" role="banner">
+  <div class="left">
+    <div class="brand">Nova Lane</div>
+    <div class="ad-slot" id="header-ad">AD SLOT header — paste ad code here</div>
+  </div>
+  <nav class="nav" aria-label="Primary">
+    <a class="nav-link active" data-target="home">Home<div class="dot"></div></a>
+    <a class="nav-link" data-target="about">About<div class="dot"></div></a>
+    <a class="nav-link" data-target="work">Work<div class="dot"></div></a>
+    <a class="nav-link" data-target="services">Services<div class="dot"></div></a>
+    <a class="nav-link" data-target="contact">Contact<div class="dot"></div></a>
+  </nav>
+  <div class="right">
+    <button class="cta" id="hireBtn">Hire Me</button>
+    <div class="hamburger" id="hamburger" aria-label="Open menu" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- HOME panel 1: Hero -->
+  <section id="home" class="hero panel" aria-labelledby="home-title">
+    <div class="hero-left">
+      <div class="eyebrow">Content Creator Portfolio</div>
+      <h1 id="home-title">Nova Lane</h1>
+      <p class="lead">Cinematic storyteller — short films, branded campaigns, editorial photography. Available for collaborations worldwide.</p>
+      <div class="hero-actions">
+        <button class="btn-primary" id="viewWork">View Work</button>
+        <button class="btn-ghost" id="downloadKit">Download Media Kit</button>
+      </div>
+      <div class="highlights">
+        <div class="stat"><strong>1.2M</strong><span>Followers</span></div>
+        <div class="stat"><strong>4.8M</strong><span>Views</span></div>
+        <div class="stat"><strong>120+</strong><span>Brands</span></div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="circle-wrap" id="circleWrap">
+        <div class="circle-inner" id="circleInner">
+          <img src="https://picsum.photos/900/900?random=21" alt="Creator portrait">
+        </div>
+        <div class="pointer-hint">hover to interact</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOME panel 2: Featured reel -->
+  <section class="panel reel" aria-labelledby="reel-title">
+    <h2 id="reel-title">Featured Reel</h2>
+    <div class="reel-grid">
+      <div class="video-wrap">
+        <!-- Replace PLAYLIST_ID with your playlist or video id -->
+        <iframe src="https://www.youtube.com/embed?listType=playlist&list=PL_FAKE_PLAYLIST_ID"
+          title="Featured reel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="thumb-row">
+        <a class="mini-thumb" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+          <img src="https://picsum.photos/400/250?random=31" alt="">
+          <div class="mini-title">Coastal Stories</div>
+        </a>
+        <a class="mini-thumb" data-video="https://www.youtube.com/embed/3JZ_D3ELwOQ">
+          <img src="https://picsum.photos/400/250?random=32" alt="">
+          <div class="mini-title">Urban Short</div>
+        </a>
+        <a class="mini-thumb" data-video="https://www.youtube.com/embed/V-_O7nl0Ii0">
+          <img src="https://picsum.photos/400/250?random=33" alt="">
+          <div class="mini-title">Brand Campaign</div>
+        </a>
+      </div>
+    </div>
+    <div class="ad-slot" id="reel-ad">AD SLOT reel — paste ad code here</div>
+  </section>
+
+  <!-- HOME panel 3: Social proof -->
+  <section class="panel social" aria-labelledby="social-title">
+    <h2 id="social-title">Social Proof</h2>
+    <div class="social-grid">
+      <div class="social-card">
+        <strong>YouTube</strong>
+        <div class="muted">Channel: NovaLaneFilms</div>
+        <a class="social-link" href="https://www.youtube.com" target="_blank" rel="noopener">Visit channel</a>
+      </div>
+      <div class="social-card">
+        <strong>Instagram</strong>
+        <div class="muted">@nova.lane</div>
+        <a class="social-link" href="https://www.instagram.com" target="_blank" rel="noopener">Visit profile</a>
+      </div>
+      <div class="social-card">
+        <strong>Press</strong>
+        <div class="muted">Featured in Travel & Lifestyle</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT (multi-panel inside) -->
+  <section id="about" class="panel" aria-labelledby="about-title">
+    <h2 id="about-title">About</h2>
+    <div class="about-panels">
+      <article class="about-card reveal">
+        <h3>Bio</h3>
+        <p>Nova Lane is a filmmaker and photographer who crafts cinematic narratives for brands and audiences. Signature style: natural light, narrative arcs, and color-forward grading.</p>
+      </article>
+      <article class="about-card reveal">
+        <h3>Timeline</h3>
+        <ul>
+          <li>2016 — Started vlogging</li>
+          <li>2019 — First brand campaign</li>
+          <li>2023 — 1M followers milestone</li>
+        </ul>
+      </article>
+      <article class="about-card reveal">
+        <h3>Press & Awards</h3>
+        <p class="muted">Selected features and festival mentions.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- WORK overview -->
+  <section id="work" class="panel" aria-labelledby="work-title">
+    <h2 id="work-title">Selected Work</h2>
+    <div class="grid" id="portfolioGrid">
+      <article class="card" tabindex="0" data-title="Coastal Stories" data-desc="Cinematic travel series" data-img="https://picsum.photos/1200/800?random=2" data-page="project1.html">
+        <div class="thumb"><img src="https://picsum.photos/800/600?random=2" alt=""></div>
+        <h3>Coastal Stories</h3>
+        <p class="muted">Short films across coastal towns.</p>
+      </article>
+
+      <article class="card" tabindex="0" data-title="Brand Collab" data-desc="Lifestyle campaign" data-img="https://picsum.photos/1200/800?random=3" data-page="project2.html">
+        <div class="thumb"><img src="https://picsum.photos/800/600?random=3" alt=""></div>
+        <h3>Brand Collab</h3>
+        <p class="muted">Integrated campaign for lifestyle brand.</p>
+      </article>
+
+      <article class="card" tabindex="0" data-title="Editorial Photography" data-desc="Fashion editorials" data-img="https://picsum.photos/1200/800?random=4" data-page="project3.html">
+        <div class="thumb"><img src="https://picsum.photos/800/600?random=4" alt=""></div>
+        <h3>Editorial Photography</h3>
+        <p class="muted">Studio and location editorials.</p>
+      </article>
+    </div>
+
+    <div class="work-social">
+      <div class="video-embed">
+        <h4>YouTube Playlist</h4>
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed?listType=playlist&list=PL_FAKE_PLAYLIST_ID" title="YouTube playlist" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <div class="insta-embed">
+        <h4>Instagram Preview</h4>
+        <div class="insta-grid">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener"><img src="https://picsum.photos/400/400?random=11" alt=""></a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener"><img src="https://picsum.photos/400/400?random=12" alt=""></a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener"><img src="https://picsum.photos/400/400?random=13" alt=""></a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener"><img src="https://picsum.photos/400/400?random=14" alt=""></a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener"><img src="https://picsum.photos/400/400?random=15" alt=""></a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener"><img src="https://picsum.photos/400/400?random=16" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="panel" aria-labelledby="services-title">
+    <h2 id="services-title">Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Video Production</h3>
+        <p class="muted">Concept, shoot, edit, grade. Deliverables: hero film + social edits.</p>
+      </div>
+      <div class="service-card">
+        <h3>Sponsored Content</h3>
+        <p class="muted">Campaign strategy, content, reporting.</p>
+      </div>
+      <div class="service-card">
+        <h3>Photography</h3>
+        <p class="muted">Editorial and product photography.</p>
+      </div>
+      <div class="service-card">
+        <h3>Workshops</h3>
+        <p class="muted">Creator coaching and talks.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="panel" aria-labelledby="contact-title">
+    <h2 id="contact-title">Contact</h2>
+    <div class="contact-wrap">
+      <form id="contactForm" class="contact-form" onsubmit="return false">
+        <input class="input" id="name" placeholder="Your name" required>
+        <input class="input" id="email" placeholder="Email" type="email" required>
+        <select class="input" id="projectType">
+          <option>Video Production</option>
+          <option>Sponsored Content</option>
+          <option>Photography</option>
+          <option>Workshop</option>
+        </select>
+        <textarea id="message" placeholder="Tell me about your project" required></textarea>
+        <button class="btn-primary" id="sendBtn">Send Message</button>
+      </form>
+
+      <aside class="contact-aside">
+        <div class="panel-box">
+          <strong>Booking</strong>
+          <div class="muted">nova.lane@example.com</div>
+          <div class="ad-slot" id="contact-ad">AD SLOT contact — paste ad code here</div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© Nova Lane — Dehra Dun</div>
+      <div class="ad-slot" id="footer-ad">AD SLOT footer — paste ad code here</div>
+    </div>
+  </footer>
+</main>
+
+<!-- Modal for quick project preview -->
+<div class="modal" id="quickModal" aria-hidden="true">
+  <div class="modal-panel">
+    <button class="close-btn" id="modalClose">Close</button>
+    <div class="modal-content">
+      <img id="modalImg" src="" alt="">
+      <div id="modalMeta">
+        <h3 id="modalTitle">Title</h3>
+        <p id="modalDesc" class="muted">Description</p>
+        <a id="openProject" class="btn-ghost" href="#">Open case study</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
